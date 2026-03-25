@@ -65,7 +65,9 @@ const dispatch = useDispatch();
       toast.success(data.message, {
         id: toastId,
       });
+      console.log("loginnn")
       navigate('/')
+      console.log("loggginnnn")
     } catch (error) {
       toast.error(error?.response?.data?.message || "Something Went Wrong", {
         id: toastId,
